@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guerra da História – 6º Ano</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="game">
+  <header>
+    <h1>⚔️ Guerra da História</h1>
+    <div id="info"></div>
+  </header>
+  <section id="arena">
+    <div class="side">
+      <div class="sprite" id="pSprite">🛡️</div>
+      <b>Seu exército</b>
+      <div class="bar"><i id="pBar"></i></div>
+      <small id="pTxt"></small>
+      <div id="buffs"></div>
+    </div>
+    <div class="vs">VS</div>
+    <div class="side">
+      <div class="sprite" id="eSprite"></div>
+      <b id="eName"></b>
+      <div class="bar enemy"><i id="eBar"></i></div>
+      <small id="eTxt"></small>
+    </div>
+  </section>
+  <p id="log"></p>
+  <nav id="actions">
+    <button data-a="attack">⚔️ Atacar</button>
+    <button data-a="defend">🛡️ Defender</button>
+    <button data-a="recruit">🪖 Recrutar tropas</button>
+    <button data-a="boss" id="bossBtn" class="boss">👑 Desafio do Chefe</button>
+  </nav>
+</main>
+<div id="overlay"><div class="box" id="box"></div></div>
+<script src="script.js"></script>
+</body>
+</html>
