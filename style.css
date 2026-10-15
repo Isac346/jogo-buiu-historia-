@@ -5,7 +5,7 @@ header{text-align:center;margin-bottom:10px}
 h1{font-family:Georgia,serif;font-size:1.8rem;color:#ffd166;text-shadow:2px 2px #000}
 #info{font-size:.95rem;opacity:.9;margin-top:4px}
 #arena{display:flex;align-items:center;justify-content:space-around;gap:6px;background:linear-gradient(#e8d5a3,#c9a96b);color:#3b2a1a;border:4px solid #6b4423;border-radius:16px;padding:16px 8px}
-.side{flex:1;text-align:center}
+.side{flex:1;text-align:center;min-width:0}
 .sprite{font-size:4.2rem;line-height:1.2}
 .vs{font-weight:900;font-size:1.5rem;color:#a4161a}
 .bar{height:16px;background:#0004;border-radius:8px;overflow:hidden;margin:6px 8%;border:2px solid #3b2a1a}
@@ -33,3 +33,16 @@ button.boss{background:#9b5de5;color:#fff;box-shadow:0 4px #5a189a}
 @keyframes tremer{25%{transform:translateX(-10px)}75%{transform:translateX(10px)}}
 @media(prefers-reduced-motion:reduce){.hit{animation:none}.bar i{transition:none}}
 @media(max-width:480px){.sprite{font-size:3rem}h1{font-size:1.4rem}#actions{gap:8px}}
+
+.army{display:flex;flex-direction:column;gap:2px;margin-top:8px;font-size:1.4rem;line-height:1.25;min-height:60px}
+.army i{font:700 .75rem system-ui;margin-left:6px;opacity:.8}
+.avanca{animation:avanca .5s}
+@keyframes avanca{50%{transform:translateX(40px) scale(1.12)}}
+#shopBtn{grid-column:1/-1;background:#06d6a0;box-shadow:0 4px #04a07a}
+.box.loja{text-align:left;max-height:92vh;overflow:auto}
+.loja h3{margin:14px 0 6px;font-family:Georgia,serif}
+.item{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px;border:2px solid #6b4423;border-radius:10px;margin:6px 0;background:#fff}
+.item small{display:block;opacity:.75}
+.item button{padding:8px 12px;white-space:nowrap}
+@media(prefers-reduced-motion:reduce){.avanca{animation:none}}
+@media(max-width:480px){.army{font-size:1.05rem}}
