@@ -14,10 +14,11 @@
   </header>
   <section id="arena">
     <div class="side">
-      <div class="sprite" id="pSprite">🛡️</div>
+      <div class="sprite" id="pSprite">🏰</div>
       <b>Seu exército</b>
       <div class="bar"><i id="pBar"></i></div>
       <small id="pTxt"></small>
+      <div class="army" id="pArmy"></div>
       <div id="buffs"></div>
     </div>
     <div class="vs">VS</div>
@@ -26,14 +27,16 @@
       <b id="eName"></b>
       <div class="bar enemy"><i id="eBar"></i></div>
       <small id="eTxt"></small>
+      <div class="army" id="eArmy"></div>
     </div>
   </section>
   <p id="log"></p>
   <nav id="actions">
     <button data-a="attack">⚔️ Atacar</button>
     <button data-a="defend">🛡️ Defender</button>
-    <button data-a="recruit">🪖 Recrutar tropas</button>
+    <button data-a="recruit">🪖 Recrutar</button>
     <button data-a="boss" id="bossBtn" class="boss">👑 Desafio do Chefe</button>
+    <button id="shopBtn" onclick="loja()">🏪 Quartel e Loja</button>
   </nav>
 </main>
 <div id="overlay"><div class="box" id="box"></div></div>
